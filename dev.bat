@@ -1,4 +1,4 @@
 docker-compose ^
-        -f services/hello1/docker-compose.yml ^
-        -f services/hello4/docker-compose.yml ^
+        -f services/api/docker-compose.yml ^
+        -f services/consumer/docker-compose.yml ^
         up -d --build

@@ -23,5 +23,8 @@ FROM scratch
 #copy the binary
 COPY --from=builder /go/bin/app /go/bin/app
 
+#expose the port
+EXPOSE 5000
+
 #set the entrypoint
 ENTRYPOINT ["/go/bin/app"]
